@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionnaire</title>
+    <link rel="icon" type="image/png" href="/capstone project 1/imgs/favicon.ico">
+
+</head>
+
+
+<body>
+  <header>
+    <h1>Questionnaire</h1>
+    <nav>
+        <h3>
+            <a href="/capstone project 1/home.html">Home</a>
+            <a href="/capstone project 1/schedule.html">Schedule</a>
+            <a href="/capstone project 1/education.html">Education</a>
+            <a href="/capstone project 1/experience.html">Experience</a>
+            <a href="/capstone project 1/contact.html">Contact</a>
+        
+        </h3>
+    </nav>
+  </header>
+<body>
+    
+      <p>Please answer the short questionnaire below. Results will be sent via email if your browser supports mailto form submission.</p>
+      <form action="mailto:recipient@example.com?subject=Questionnaire%20Results" method="post" enctype="text/plain">
+        <fieldset>
+          <legend>Short survey</legend>
+
+          <p>1) Are you a student?</p>
+          <label><input type="radio" name="Student" value="Yes" checked> Yes</label>
+          <label><input type="radio" name="Student" value="No"> No</label>
+
+          <p>2) Which topics are interesting for you? (choose all that apply)</p>
+          <label><input type="checkbox" name="web" value="Web Programming"> Web</label>
+          <label><input type="checkbox" name="ai" value="AI"> Artificial Intelligence</label>
+          <label><input type="checkbox" name="bio" value="Bioinformatics"> Bioinformatics</label>
+
+          <p>3) Rate your familiarity with HTML (1 = low, 5 = high)</p>
+          <label for="rating">Rating:</label>
+          <select id="rating" name="HTML_Rating">
+            <option selected>Select</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+
+          <p>4) Any comments?</p>
+          <textarea name="Comments" rows="4" cols="50" placeholder="Write here"></textarea>
+
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit results</button>
+          <button type="reset">Clear</button>
+        </p>
+      </form>
+
+      <p><small>If you prefer, collect responses on the server or via Google Forms for more reliable results.</small></p>
+  
+
+  <footer>
+    <strong> <p>&copy; Leyla Khudiyeva's Website, 2025</p> </strong>
+ </footer>
+</body>
+</html>
+
+
+
+
+

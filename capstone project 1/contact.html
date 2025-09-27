@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="icon" type="image/png" href="/capstone project 1/imgs/favicon.ico">
+
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <h3>
+                <a href="/capstone project 1/home.html">Home</a>
+                <a href="/capstone project 1/schedule.html">Schedule</a>
+                <a href="/capstone project 1/education.html">Education</a>
+                <a href="/capstone project 1/experience.html">Experience</a>
+                <a href="/capstone project 1/questionnaire.html">Questionnaire</a>
+            
+            </h3>
+        </nav>
+    </header>
+    
+    <p>If you'd like to send me a message, fill out the form below. The form uses <code>enctype="text/plain"</code> so it's submitted as plain text. You can contact me via email at <a href="mailto:lkhudiyeva17248@ada.edu.az">lkhudiyeva17248@ada.edu.az</a> or by phone at <strong>+994 50 995 24 42</strong>.</p>
+
+    <form action="mailto:lkhudiyeva17248@ada.edu.az" method="post" enctype="text/plain">
+        <fieldset>
+            <legend>Basic Info</legend>
+            <label for="name">Name:</label><br />
+            <input type="text" id="name" name="Name" required><br /><br />
+
+            <label for="email">Email:</label><br />
+            <input type="email" id="email" name="Email" required><br /><br />
+
+            <label for="subject">Subject:</label><br />
+            <input type="text" id="subject" name="Subject"><br /><br />
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences</legend>
+            <p>Preferred contact method:</p>
+            <label><input type="radio" name="ContactMethod" value="Email" checked> Email</label><br>
+            <label><input type="radio" name="ContactMethod" value="Phone"> Phone</label><br><br>
+
+            <label for="finding">How did you find me?</label><br>
+            <select id="finding" name="Finding">
+                <option value="Search">Search engine</option>
+                <option value="Referral">Referral</option>
+                <option value="Social">Social media</option>
+                <option value="Other">Other</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Message</legend>
+            <label for="message"></label><br />
+            <textarea id="message" name="Message" rows="6" cols="50" placeholder="Write here"></textarea><br />
+        </fieldset>
+
+        <p>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+      </body>
+      <footer>
+        <strong> <p>&copy; Leyla Khudiyeva's Website, 2025</p> </strong>
+     </footer>
+      </html>
+
+
+
+
+
+
